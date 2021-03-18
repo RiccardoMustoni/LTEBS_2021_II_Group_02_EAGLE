@@ -146,28 +146,28 @@
 <text x="-9.652" y="-34.036" size="3.81" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="TMUX1208">
-<pin name="D" x="-5.08" y="2.54" length="middle"/>
-<pin name="S4" x="-5.08" y="7.62" length="middle"/>
-<pin name="S3" x="-5.08" y="12.7" length="middle"/>
-<pin name="S2" x="-5.08" y="17.78" length="middle"/>
-<pin name="S1" x="-5.08" y="22.86" length="middle"/>
-<pin name="N.C." x="-5.08" y="27.94" length="middle"/>
-<pin name="EN" x="-5.08" y="33.02" length="middle"/>
-<pin name="A0" x="-5.08" y="38.1" length="middle"/>
-<pin name="A1" x="22.86" y="38.1" length="middle" rot="R180"/>
-<pin name="A2" x="22.86" y="33.02" length="middle" rot="R180"/>
-<pin name="GND" x="22.86" y="27.94" length="middle" rot="R180"/>
-<pin name="VDD" x="22.86" y="22.86" length="middle" rot="R180"/>
-<pin name="S5" x="22.86" y="17.78" length="middle" rot="R180"/>
-<pin name="S6" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="S7" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="S8" x="22.86" y="2.54" length="middle" rot="R180"/>
-<wire x1="0" y1="40.64" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="17.78" y2="0" width="0.1524" layer="94"/>
-<wire x1="17.78" y1="0" x2="17.78" y2="40.64" width="0.1524" layer="94"/>
-<wire x1="17.78" y1="40.64" x2="0" y2="40.64" width="0.1524" layer="94"/>
-<text x="3.81" y="41.656" size="2.1844" layer="95">&gt;NAME</text>
-<text x="3.81" y="-3.048" size="2.1844" layer="96">&gt;VALUE</text>
+<pin name="D" x="-15.24" y="-17.78" length="middle"/>
+<pin name="S4" x="-15.24" y="-12.7" length="middle"/>
+<pin name="S3" x="-15.24" y="-7.62" length="middle"/>
+<pin name="S2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="S1" x="-15.24" y="2.54" length="middle"/>
+<pin name="N.C." x="-15.24" y="7.62" length="middle"/>
+<pin name="EN" x="-15.24" y="12.7" length="middle"/>
+<pin name="A0" x="-15.24" y="17.78" length="middle"/>
+<pin name="A1" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="A2" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="S5" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="S6" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="S7" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="S8" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<text x="-4.826" y="21.336" size="2.1844" layer="95">&gt;NAME</text>
+<text x="-5.334" y="-23.114" size="2.1844" layer="96">&gt;VALUE</text>
+<wire x1="-10.16" y1="20.32" x2="-10.16" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-10.16" y2="20.32" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
