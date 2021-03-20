@@ -6436,10 +6436,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="45.72" y="63.5" size="1.778" layer="97">Analog Temperature
 Sensor</text>
 <text x="233.68" y="33.02" size="1.778" layer="97">I2C Connectors</text>
-<text x="216.408" y="120.904" size="1.778" layer="97">The I2C expander is used to
+<text x="221.488" y="98.044" size="2.54" layer="97">The I2C expander is used to
 connect several BME280 
 sensors outside the PCB 
 through these connectors</text>
+<text x="208.28" y="124.46" size="2.1844" layer="97">4-Channel 12C</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="5.08" y="5.08" smashed="yes">
@@ -7184,6 +7185,11 @@ through these connectors</text>
 <wire x1="170.18" y1="147.32" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
 <label x="162.56" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="157.48" y1="101.6" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<label x="157.48" y="109.22" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="P_2.5"/>
+</segment>
 </net>
 <net name="12C_A1" class="0">
 <segment>
@@ -7191,12 +7197,22 @@ through these connectors</text>
 <wire x1="170.18" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <label x="162.56" y="144.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<wire x1="154.94" y1="101.6" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
+<label x="154.94" y="109.22" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="P_2.6"/>
+</segment>
 </net>
 <net name="12C_A2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <wire x1="170.18" y1="142.24" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
 <label x="162.56" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="101.6" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
+<label x="152.4" y="109.22" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="P_2.7"/>
 </segment>
 </net>
 </nets>
