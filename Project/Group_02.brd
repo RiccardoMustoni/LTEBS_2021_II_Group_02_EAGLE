@@ -191,10 +191,10 @@
 <wire x1="71.12" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
 <wire x1="0" y1="43.18" x2="71.12" y2="43.18" width="0.2032" layer="20"/>
 <dimension x1="0" y1="46.99" x2="71.12" y2="46.99" x3="35.56" y3="45.72" textsize="1.778" layer="51"/>
-<hole x="3.175" y="41.396" drill="2.5"/>
-<hole x="3.175" y="2.032" drill="2.5"/>
-<hole x="68.58" y="2.032" drill="2.5"/>
-<hole x="68.58" y="41.369" drill="2.5"/>
+<hole x="3.175" y="41.3" drill="3"/>
+<hole x="3.175" y="2.032" drill="3"/>
+<hole x="68.58" y="2.032" drill="3"/>
+<hole x="68.58" y="41.3" drill="3"/>
 <dimension x1="0" y1="0" x2="0" y2="43.18" x3="-2.54" y3="21.59" textsize="1.778" layer="51"/>
 </plain>
 <libraries>
