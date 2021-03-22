@@ -6415,7 +6415,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
-<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -6428,6 +6427,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$3" library="Group_02_Library" deviceset="TMUX1208" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
+<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6614,9 +6614,6 @@ through these connectors</text>
 <instance part="SUPPLY10" gate="G$1" x="472.44" y="78.74" smashed="yes">
 <attribute name="VALUE" x="472.44" y="81.534" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND1" gate="1" x="454.66" y="63.5" smashed="yes">
-<attribute name="VALUE" x="454.66" y="63.246" size="1.778" layer="96" align="top-center"/>
-</instance>
 <instance part="GND2" gate="1" x="165.1" y="50.8" smashed="yes">
 <attribute name="VALUE" x="165.1" y="50.546" size="1.778" layer="96" align="top-center"/>
 </instance>
@@ -6653,6 +6650,9 @@ through these connectors</text>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="162.56" y="175.26" smashed="yes">
 <attribute name="VALUE" x="162.56" y="178.054" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND1" gate="1" x="454.66" y="63.5" smashed="yes">
+<attribute name="VALUE" x="454.66" y="63.246" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6815,25 +6815,24 @@ through these connectors</text>
 <wire x1="93.98" y1="33.02" x2="93.98" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="485.14" y1="88.9" x2="485.14" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="485.14" y1="76.2" x2="454.66" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="454.66" y1="76.2" x2="452.12" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="66.04" x2="454.66" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="454.66" y1="66.04" x2="454.66" y2="76.2" width="0.1524" layer="91"/>
-<junction x="454.66" y="76.2"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="167.64" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="134.62" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="NRESET"/>
+<wire x1="165.1" y1="132.08" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="134.62" x2="165.1" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="149.86" x2="167.64" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="167.64" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <junction x="165.1" y="134.62"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="452.12" y1="76.2" x2="454.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="76.2" x2="454.66" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="454.66" y1="76.2" x2="485.14" y2="76.2" width="0.1524" layer="91"/>
+<junction x="454.66" y="76.2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="485.14" y1="76.2" x2="485.14" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12V" class="0">
