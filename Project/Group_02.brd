@@ -1235,14 +1235,9 @@ design rules under a new name.</description>
 <wire x1="53.848" y1="30.226" x2="52.57936875" y2="30.226" width="0.254" layer="1"/>
 <wire x1="49.149" y1="31.281" x2="50.6104" y2="29.8196" width="0.254" layer="1"/>
 <wire x1="50.6104" y1="29.8196" x2="52.17296875" y2="29.8196" width="0.254" layer="1"/>
-<wire x1="18.704" y1="37.395" x2="18.704" y2="37.811" width="0.254" layer="1"/>
-<wire x1="18.704" y1="37.811" x2="18.415" y2="38.1" width="0.254" layer="1"/>
 <wire x1="47.283" y1="35.56" x2="48.2988" y2="34.5442" width="0.254" layer="1"/>
 <wire x1="48.2988" y1="34.5442" x2="48.514" y2="34.5442" width="0.254" layer="1"/>
 <via x="48.514" y="34.5442" extent="1-16" drill="0.35"/>
-<wire x1="17.399" y1="38.1" x2="17.145" y2="38.354" width="0.254" layer="1"/>
-<via x="17.145" y="38.354" extent="1-16" drill="0.35"/>
-<wire x1="18.415" y1="38.1" x2="17.399" y2="38.1" width="0.254" layer="1"/>
 <wire x1="37.74" y1="30.745" x2="37.74" y2="29.993" width="0.254" layer="1"/>
 <wire x1="37.74" y1="29.993" x2="37.465" y2="29.718" width="0.254" layer="1"/>
 <via x="37.465" y="29.718" extent="1-16" drill="0.35"/>
@@ -1253,6 +1248,9 @@ design rules under a new name.</description>
 <wire x1="38.126" y1="37.598" x2="38.126" y2="36.55" width="0.254" layer="1"/>
 <wire x1="38.126" y1="36.55" x2="38.354" y2="36.322" width="0.254" layer="1"/>
 <via x="38.354" y="36.322" extent="1-16" drill="0.35"/>
+<wire x1="18.704" y1="37.395" x2="18.38" y2="37.719" width="0.254" layer="1"/>
+<wire x1="18.38" y1="37.719" x2="17.526" y2="37.719" width="0.254" layer="1"/>
+<via x="17.526" y="37.719" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="GNDBREAK"/>
@@ -1450,17 +1448,11 @@ design rules under a new name.</description>
 <wire x1="47.498" y1="32.981" x2="48.429" y2="33.912" width="0.254" layer="1"/>
 <wire x1="48.429" y1="33.912" x2="49.7542125" y2="33.912" width="0.254" layer="1"/>
 </signal>
-<signal name="MUX_A0/2.3C">
-<contactref element="U$1" pad="24"/>
-</signal>
-<signal name="MUX_A1/2.3C">
-<contactref element="U$1" pad="23"/>
-</signal>
-<signal name="MUX_A2/2.3C">
-<contactref element="U$1" pad="22"/>
-</signal>
-<signal name="MUX_OUT/2.5C">
+<signal name="MUX_OUT">
 <contactref element="U$1" pad="21"/>
+<contactref element="U$3" pad="6"/>
+<wire x1="19.104" y1="34.995" x2="19.104" y2="29.264" width="0.2032" layer="1"/>
+<wire x1="19.104" y1="29.264" x2="16.51" y2="26.67" width="0.2032" layer="1"/>
 </signal>
 <signal name="I2C_SCL">
 <contactref element="U$1" pad="16"/>
@@ -1589,17 +1581,44 @@ design rules under a new name.</description>
 <wire x1="19.504" y1="34.995" x2="19.504" y2="34.6028" width="0.254" layer="1"/>
 <wire x1="19.504" y1="34.6028" x2="20.5026" y2="33.6042" width="0.254" layer="1"/>
 </signal>
-<signal name="MUX_OUT/1.4C">
-<contactref element="U$3" pad="6"/>
-</signal>
-<signal name="MUX_A0/1.3C">
+<signal name="MUX_A0">
 <contactref element="U$3" pad="15"/>
+<contactref element="U$1" pad="24"/>
+<wire x1="18.796" y1="38.354" x2="15.748" y2="38.354" width="0.2032" layer="1"/>
+<via x="15.748" y="38.354" extent="1-16" drill="0.35"/>
+<wire x1="15.748" y1="38.354" x2="14.8082" y2="37.4142" width="0.2032" layer="16"/>
+<wire x1="14.8082" y1="37.4142" x2="13.86659375" y2="37.4142" width="0.2032" layer="16"/>
+<wire x1="13.86659375" y1="37.4142" x2="8.89" y2="32.43760625" width="0.2032" layer="16"/>
+<wire x1="8.89" y1="32.43760625" x2="8.89" y2="26.67" width="0.2032" layer="16"/>
+<wire x1="19.104" y1="37.395" x2="19.104" y2="38.046" width="0.2032" layer="1"/>
+<wire x1="19.104" y1="38.046" x2="18.796" y2="38.354" width="0.2032" layer="1"/>
 </signal>
-<signal name="MUX_A1/1.4C">
+<signal name="MUX_A1">
 <contactref element="U$3" pad="14"/>
+<contactref element="U$1" pad="23"/>
+<wire x1="19.20888125" y1="38.9354" x2="15.38779375" y2="38.9354" width="0.2032" layer="1"/>
+<wire x1="11.43" y1="28.91870625" x2="11.43" y2="26.67" width="0.2032" layer="1"/>
+<wire x1="8.9662" y1="31.38250625" x2="11.43" y2="28.91870625" width="0.2032" layer="1"/>
+<wire x1="15.38779375" y1="38.9354" x2="8.9662" y2="32.51380625" width="0.2032" layer="1"/>
+<wire x1="8.9662" y1="32.51380625" x2="8.9662" y2="31.38250625" width="0.2032" layer="1"/>
+<wire x1="19.504" y1="37.395" x2="19.504" y2="38.64028125" width="0.2032" layer="1"/>
+<wire x1="19.504" y1="38.64028125" x2="19.20888125" y2="38.9354" width="0.2032" layer="1"/>
 </signal>
-<signal name="MUX_A2/1.4C">
+<signal name="MUX_A2">
 <contactref element="U$3" pad="13"/>
+<contactref element="U$1" pad="22"/>
+<wire x1="19.904" y1="37.395" x2="19.904" y2="37.684" width="0.2032" layer="1"/>
+<wire x1="19.904" y1="37.684" x2="20.32" y2="38.1" width="0.2032" layer="1"/>
+<via x="20.32" y="38.1" extent="1-16" drill="0.35"/>
+<via x="15.494" y="28.321" extent="1-16" drill="0.35"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="34.83845625" width="0.2032" layer="16"/>
+<wire x1="18.9738" y1="31.12850625" x2="18.27449375" y2="30.4292" width="0.2032" layer="16"/>
+<wire x1="18.27449375" y1="30.4292" x2="17.6022" y2="30.4292" width="0.2032" layer="16"/>
+<wire x1="17.6022" y1="30.4292" x2="15.494" y2="28.321" width="0.2032" layer="16"/>
+<wire x1="20.32" y1="34.83845625" x2="18.9738" y2="33.49225625" width="0.2032" layer="16"/>
+<wire x1="18.9738" y1="33.49225625" x2="18.9738" y2="31.12850625" width="0.2032" layer="16"/>
+<wire x1="15.494" y1="28.321" x2="13.97" y2="26.797" width="0.2032" layer="1"/>
+<wire x1="13.97" y1="26.797" x2="13.97" y2="26.67" width="0.2032" layer="1"/>
 </signal>
 <signal name="I2C_A0">
 <contactref element="U$2" pad="1"/>
