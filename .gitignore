@@ -8,6 +8,7 @@
 *.s$?
 *.l$?
 
+# Eagle project file
 eagle.epf
 
 # Autorouter files
