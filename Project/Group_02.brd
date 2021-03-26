@@ -188,8 +188,8 @@
 <plain>
 <hole x="2.4" y="2" drill="3"/>
 <hole x="65.913" y="2" drill="3"/>
-<hole x="65.913" y="38.1" drill="3"/>
-<hole x="2.4" y="38.1" drill="3"/>
+<hole x="65.913" y="38.8" drill="3"/>
+<hole x="2.4" y="38.8" drill="3"/>
 <text x="5.588" y="0.902878125" size="0.6096" layer="21" rot="R90">0.1μF</text>
 <text x="32.893" y="0.902878125" size="0.6096" layer="21" rot="R90">0.1μF</text>
 <text x="36.576" y="32.131" size="1.016" layer="21">S1</text>
